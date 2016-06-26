@@ -1,0 +1,123 @@
+
+
+<html>
+    <head>
+        <title>Movies Trailer Website</title>
+        <style type=text/css media="screen">
+        @font-face {
+        font-family: Contail One;
+        src: url('contrail_one.ttf') format('truetype');
+            }
+        div.images {
+            padding: 30px 30px;
+            float: left;
+            }
+        header {
+            background-color: #242323;
+            color: #EFEFEF;
+            padding: 20px 50px;
+            font-family: 'Contail One';
+            font-size: 3em;
+            }
+        div.images figure#trail > img {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            }
+        div.images figure#trail > figcaption {
+            display: block;
+            text-align: left;
+            font-weight: 800;  
+            font-size: 1em;
+            display: table-caption; caption-side: bottom ;
+            }
+        figure {
+            display: table;
+            width: 250px;
+            height: 180px
+            }
+        </style>
+        
+    
+    </script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.min.js"></script>
+    <script>
+        $(function(){
+           //alert('hello'); 
+           $('body section#movies div.images > figure#trail').delegate('img,figcaption','click',function(){
+              //alert('hi');
+              window.open($(this).parent().attr('youtubeurl'));
+            });
+              //$('#video_container').append('<iframe src="https://www.youtube.com/embed/8IBNZ6O2kMk"></iframe>');
+        });
+    </script>
+    </head>
+
+    <body>
+        <header>
+            My Favourite Movie Trailers
+        </header>
+    
+    <div id="video_container" class="screen">
+    </div>
+    <section id="movies">
+        
+<div class="images">
+<figure id="trail" youtubeurl="https://www.youtube.com/watch?v=1U2DKKqxHgE" width="200" height="200">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/The_Angry_Birds_Movie_poster.png" alt="Angry Birds"/>
+        <figcaption>
+            A film based on the game Angry Birds
+        </figcaption>
+</figure>
+</div>
+
+<div class="images">
+<figure id="trail" youtubeurl="https://www.youtube.com/watch?v=KYz2wyBy3kc" width="200" height="200">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" alt="Toy Story"/>
+        <figcaption>
+            A story of a boy and his toys that come to life
+        </figcaption>
+</figure>
+</div>
+
+<div class="images">
+<figure id="trail" youtubeurl="https://www.youtube.com/watch?v=HfRQOc9WgnY" width="200" height="200">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Rajinikanth_in_Kabali.jpg" alt="Kabali"/>
+        <figcaption>
+            A film on a Gangster named Kabali
+        </figcaption>
+</figure>
+</div>
+
+<div class="images">
+<figure id="trail" youtubeurl="https://www.youtube.com/watch?v=EXeTwQWrcwY" width="200" height="200">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg" alt="THE DARK NIGHT"/>
+        <figcaption>
+            A film shows confict between Superhero Batman and Joker
+        </figcaption>
+</figure>
+</div>
+
+<div class="images">
+<figure id="trail" youtubeurl="https://www.youtube.com/watch?v=eOrNdBpGMv8" width="200" height="200">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg" alt="Avengers"/>
+        <figcaption>
+            A film of all Marvel Superheroes
+        </figcaption>
+</figure>
+</div>
+
+<div class="images">
+<figure id="trail" youtubeurl="https://www.youtube.com/watch?v=8IBNZ6O2kMk" width="200" height="200">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/63/Monsters_Inc.JPG" alt="Monsters,INC."/>
+        <figcaption>
+            A Story about Monsters and a little girl
+        </figcaption>
+</figure>
+</div>
+
+    </section>
+    </body>
+</html>
